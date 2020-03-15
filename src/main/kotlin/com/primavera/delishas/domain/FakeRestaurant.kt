@@ -7,7 +7,7 @@ import javax.persistence.Table
 @Entity
 @Table(name = "fake_restaurant")
 class FakeRestaurant(
-        @Column(name = "name", unique = true)
+        @Column(name = "name", unique = true, length = 200)
         var name: String,
 
         @Column(name = "breakfast_start")
