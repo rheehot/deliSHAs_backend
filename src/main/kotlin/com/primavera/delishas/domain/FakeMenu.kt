@@ -21,6 +21,9 @@ data class FakeMenu(
         @Column(name = "date")
         var date: LocalDate,
 
+        @Column(name = "is_valid")
+        var isValid: Boolean,
+
         @ManyToOne
         @JoinColumn(name = "restaurant_id")
         var restaurant: FakeRestaurant
